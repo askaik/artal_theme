@@ -1,0 +1,8 @@
+/* Artal Theme CSS */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9f9f9;
+}
+.btn, .modal-content, .form-control {
+    border-radius: 0.5rem;
+}
