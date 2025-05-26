@@ -1,8 +1,46 @@
-/* Artal Theme CSS */
-body {
-    font-family: "Inter", sans-serif;
-    background-color: #f9f9f9;
+:root {
+    --primary-color: #3b82f6; /* Tailwind blue-500 */
+    --secondary-color: #f1f5f9;
+    --border-radius: 12px;
+    --font: 'Inter', sans-serif;
 }
-.btn, .modal-content, .form-control {
-    border-radius: 0.5rem;
+
+body {
+    font-family: var(--font);
+    background-color: var(--secondary-color);
+}
+
+.form-control,
+.btn,
+.modal-content,
+.page-card,
+.card {
+    border-radius: var(--border-radius) !important;
+}
+
+.page-head,
+.navbar,
+.page-container {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.sidebar-section {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+input,
+textarea,
+select {
+    border-radius: var(--border-radius);
 }
